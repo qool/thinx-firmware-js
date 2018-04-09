@@ -31,9 +31,10 @@
     "mdns-discovery": "^0.2.6",
     "mqtt": "^2.16.0",
     "node-persist": "^2.1.0",
+    "omega_gpio": "^0.1.0",
+    "snyk": "^1.59.1",
     "ssl-root-cas": "^1.2.5",
-    "typeof": "^1.0.0",
-    "snyk": "^1.59.1"
+    "typeof": "^1.0.0"
   },
   "snyk": true
 }
