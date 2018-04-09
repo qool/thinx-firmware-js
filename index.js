@@ -48,7 +48,7 @@ var Button = gpio.Button;
 var LED = gpio.LED;
 
 // Button connected to pin 23 that is wired to read a digital high when pressed
-var myButton = new Button(3);
+var myButton = new Button(18);
 
 // LED connected to pin 26 that is wired so that it turns on when the output
 // pin is set to a digital low
@@ -63,11 +63,11 @@ process.on('SIGINT', function(){
 });
 
 // Infinite loop checking the button
-var checkButton = function(){
-  if(myButton.isPressed()){
+var checkButton = function() {
+  if (myButton.isPressed()) {
     myLED.on();
-  }
-  else{
+    thinx.setStatus("[PRESSED]");
+  } else {
     myLED.off();
   }
   setImmediate(checkButton);
